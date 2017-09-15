@@ -1,0 +1,85 @@
+\hypertarget{class_physics_world}{}\section{Physics\+World Class Reference}
+\label{class_physics_world}\index{Physics\+World@{Physics\+World}}
+
+
+klasa reprezetujaca fizyczny swiat. /summary$>$  
+
+
+
+
+{\ttfamily \#include $<$Physics\+World.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_physics_world_abf1573b008b52b60a83a8f36cbdd51bc}{$\sim$\+Physics\+World} ()
+\item 
+\mbox{\Hypertarget{class_physics_world_aad64a97f3734de0937f12d665dae7dab}\label{class_physics_world_aad64a97f3734de0937f12d665dae7dab}} 
+void {\bfseries init} ()
+\item 
+void \hyperlink{class_physics_world_aebc88d1b3c209a48c2abf0c8a4aabd51}{update} (double delta\+Time)
+\begin{DoxyCompactList}\small\item\em metoda aktualizujaca fizyczny swiat gry o czas podany w parametrze \end{DoxyCompactList}\item 
+void \hyperlink{class_physics_world_aa97ff9b7388afe747b447b42aeccfb8c}{add\+Physical\+Object} (\hyperlink{class_physical_object}{Physical\+Object} $\ast$phyobj)
+\begin{DoxyCompactList}\small\item\em metoda pozwalajaca na dodanie obiektu fizycznego do swiata fizycznego \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_physics_world_a9bd79f2fc82a6e50c1ae94719fe9b67f}\label{class_physics_world_a9bd79f2fc82a6e50c1ae94719fe9b67f}} 
+void {\bfseries set\+Camera\+Pos} (glm\+::vec3 camera\+Pos)
+\item 
+\mbox{\Hypertarget{class_physics_world_a6ab733de6f30178a41455d27cd29bf0d}\label{class_physics_world_a6ab733de6f30178a41455d27cd29bf0d}} 
+void {\bfseries set\+Camera\+Front} (glm\+::vec3 camera\+Front)
+\item 
+\mbox{\Hypertarget{class_physics_world_a84a45466593d61dce71666d87edf2038}\label{class_physics_world_a84a45466593d61dce71666d87edf2038}} 
+void {\bfseries set\+Rey\+Test\+Obj} (\hyperlink{class_abstract_game_object}{Abstract\+Game\+Object} $\ast$ray\+Test)
+\item 
+void \hyperlink{class_physics_world_a948724c83bcd3d69a0977b5c9e2b9ac4}{clear} ()
+\begin{DoxyCompactList}\small\item\em metoda oczyszczajaca swiat z wszystkich obiektow fizycznych wykorzystywana podczas ladowania wczesniej zapisanego stanu gry \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+klasa reprezetujaca fizyczny swiat. /summary$>$ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_physics_world_abf1573b008b52b60a83a8f36cbdd51bc}\label{class_physics_world_abf1573b008b52b60a83a8f36cbdd51bc}} 
+\index{Physics\+World@{Physics\+World}!````~Physics\+World@{$\sim$\+Physics\+World}}
+\index{````~Physics\+World@{$\sim$\+Physics\+World}!Physics\+World@{Physics\+World}}
+\subsubsection{\texorpdfstring{$\sim$\+Physics\+World()}{~PhysicsWorld()}}
+{\footnotesize\ttfamily Physics\+World\+::$\sim$\+Physics\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+summary$>$ metoda inicjalizujaca fizyczny swiat, ustawia grawitacje /summary$>$ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_physics_world_aa97ff9b7388afe747b447b42aeccfb8c}\label{class_physics_world_aa97ff9b7388afe747b447b42aeccfb8c}} 
+\index{Physics\+World@{Physics\+World}!add\+Physical\+Object@{add\+Physical\+Object}}
+\index{add\+Physical\+Object@{add\+Physical\+Object}!Physics\+World@{Physics\+World}}
+\subsubsection{\texorpdfstring{add\+Physical\+Object()}{addPhysicalObject()}}
+{\footnotesize\ttfamily void Physics\+World\+::add\+Physical\+Object (\begin{DoxyParamCaption}\item[{\hyperlink{class_physical_object}{Physical\+Object} $\ast$}]{phyobj }\end{DoxyParamCaption})}
+
+
+
+metoda pozwalajaca na dodanie obiektu fizycznego do swiata fizycznego 
+
+\hyperlink{class_physical_object}{Physical\+Object} $\ast$ phyobj -\/ wskaznik na obiekt fizyczny ktory zostanie dodany do fizycznego swiata \mbox{\Hypertarget{class_physics_world_a948724c83bcd3d69a0977b5c9e2b9ac4}\label{class_physics_world_a948724c83bcd3d69a0977b5c9e2b9ac4}} 
+\index{Physics\+World@{Physics\+World}!clear@{clear}}
+\index{clear@{clear}!Physics\+World@{Physics\+World}}
+\subsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void Physics\+World\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+metoda oczyszczajaca swiat z wszystkich obiektow fizycznych wykorzystywana podczas ladowania wczesniej zapisanego stanu gry 
+
+\mbox{\Hypertarget{class_physics_world_aebc88d1b3c209a48c2abf0c8a4aabd51}\label{class_physics_world_aebc88d1b3c209a48c2abf0c8a4aabd51}} 
+\index{Physics\+World@{Physics\+World}!update@{update}}
+\index{update@{update}!Physics\+World@{Physics\+World}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Physics\+World\+::update (\begin{DoxyParamCaption}\item[{double}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+metoda aktualizujaca fizyczny swiat gry o czas podany w parametrze 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/szymk/\+Downloads/\+Nowy folder/\+Simple\+Game\+Engine/\+Simple\+Game\+Engine/\+G\+Kp/Physics\+World.\+h\item 
+C\+:/\+Users/szymk/\+Downloads/\+Nowy folder/\+Simple\+Game\+Engine/\+Simple\+Game\+Engine/\+G\+Kp/Physics\+World.\+cpp\end{DoxyCompactItemize}

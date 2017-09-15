@@ -1,0 +1,126 @@
+\hypertarget{class_resource_manager}{}\section{Resource\+Manager Class Reference}
+\label{class_resource_manager}\index{Resource\+Manager@{Resource\+Manager}}
+
+
+statyczna klasa odpowiedzialna za wczytywanie oraz przechowywanie zasobów takich jak tekstury , shadery oraz siatki(\+Vertex Array Objects). Klasa ta tworzy instancje klas \hyperlink{class_shader}{Shader},\hyperlink{class_texture}{Texture} i \hyperlink{class_vao_object}{Vao\+Object}. /summary$>$  
+
+
+
+
+{\ttfamily \#include $<$Resource\+Manager.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_resource_manager_a21ff03ed8d88126243b33bb75fb308b7}{load\+Shader} (string v\+Shader\+File, string f\+Shader\+File, string name)
+\begin{DoxyCompactList}\small\item\em kompiluje shadery z plikow o podanych nazwach i przechowuje ich id w mapie pod kluczem podanym w parametrze name \end{DoxyCompactList}\item 
+static void \hyperlink{class_resource_manager_a813e553b7f7df873b455e86ab7445b1c}{load\+Shader} (string v\+Shader\+File, string f\+Shader\+File, string g\+Shader\+File, string name)
+\begin{DoxyCompactList}\small\item\em kompiluje shadery z plikow o podanych nazwach i przechowuje ich id w mapie pod kluczem podanym w parametrze name \end{DoxyCompactList}\item 
+static \hyperlink{class_shader}{Shader} $\ast$ \hyperlink{class_resource_manager_ae95ecdc6de1127616485f7d069437332}{Get\+Shader} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em zwraca shader o kluczu podanym w parametrze \end{DoxyCompactList}\item 
+static \hyperlink{class_texture}{Texture} \hyperlink{class_resource_manager_a35ccd9bf812af37f10a17e061402e11f}{Load\+Texture} (const G\+Lchar $\ast$file, G\+Lboolean alpha, string name)
+\begin{DoxyCompactList}\small\item\em laduje teksture z pliku podanego w parametrze i zapisuje ja w mapie \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_resource_manager_a8e1a23eca5474aa435c641666257a255}\label{class_resource_manager_a8e1a23eca5474aa435c641666257a255}} 
+static \hyperlink{class_texture}{Texture} {\bfseries Get\+Texture} (std\+::string name)
+\item 
+\mbox{\Hypertarget{class_resource_manager_abc048e566e7de69db49fb80428bdc8ab}\label{class_resource_manager_abc048e566e7de69db49fb80428bdc8ab}} 
+static \hyperlink{class_vao_object}{Vao\+Object} {\bfseries load\+V\+A\+O\+From\+File} (const G\+Lchar $\ast$file, string=\char`\"{}\char`\"{}, bool read\+Normals=false)
+\item 
+static \hyperlink{class_vao_object}{Vao\+Object} \hyperlink{class_resource_manager_af49529027ae46f78df99bc4f499e1302}{load\+V\+AO} (G\+Lfloat $\ast$vertices\+Array, G\+Luint number\+Of\+Values, bool normals, string name)
+\begin{DoxyCompactList}\small\item\em laduje V\+AO z pliku podanego w parametrze i zapisuje je w mapie \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_resource_manager_a23ec806a48cf4d277742f54bfc7a4c0c}\label{class_resource_manager_a23ec806a48cf4d277742f54bfc7a4c0c}} 
+static \hyperlink{class_vao_object}{Vao\+Object} $\ast$ {\bfseries get\+V\+AO} (string name)
+\item 
+static void \hyperlink{class_resource_manager_a8d5a441251bf579b25ff3ab3e7c28342}{delete\+Assets} ()
+\begin{DoxyCompactList}\small\item\em usowa zasoby z kolekcji \end{DoxyCompactList}\item 
+static unsigned int \hyperlink{class_resource_manager_ad311e01ff4231f57b210cdf8342210c7}{load\+Cubemap} (vector$<$ std\+::string $>$ faces)
+\begin{DoxyCompactList}\small\item\em laduje tekstury skyboxa z pliku i tworzy z nich skyboxa \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_resource_manager_ad8cdb632b2b69e791e82aa3f66c135e6}\label{class_resource_manager_ad8cdb632b2b69e791e82aa3f66c135e6}} 
+static bool {\bfseries read\+World} (std\+::string wordl\+Name)
+\item 
+\mbox{\Hypertarget{class_resource_manager_abeb131a622f64d59c938fd238d3802f8}\label{class_resource_manager_abeb131a622f64d59c938fd238d3802f8}} 
+static std\+::vector$<$ std\+::string $>$ {\bfseries Get\+Texture\+Names} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+statyczna klasa odpowiedzialna za wczytywanie oraz przechowywanie zasobów takich jak tekstury , shadery oraz siatki(\+Vertex Array Objects). Klasa ta tworzy instancje klas \hyperlink{class_shader}{Shader},\hyperlink{class_texture}{Texture} i \hyperlink{class_vao_object}{Vao\+Object}. /summary$>$ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_resource_manager_a8d5a441251bf579b25ff3ab3e7c28342}\label{class_resource_manager_a8d5a441251bf579b25ff3ab3e7c28342}} 
+\index{Resource\+Manager@{Resource\+Manager}!delete\+Assets@{delete\+Assets}}
+\index{delete\+Assets@{delete\+Assets}!Resource\+Manager@{Resource\+Manager}}
+\subsubsection{\texorpdfstring{delete\+Assets()}{deleteAssets()}}
+{\footnotesize\ttfamily void Resource\+Manager\+::delete\+Assets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+usowa zasoby z kolekcji 
+
+\mbox{\Hypertarget{class_resource_manager_ae95ecdc6de1127616485f7d069437332}\label{class_resource_manager_ae95ecdc6de1127616485f7d069437332}} 
+\index{Resource\+Manager@{Resource\+Manager}!Get\+Shader@{Get\+Shader}}
+\index{Get\+Shader@{Get\+Shader}!Resource\+Manager@{Resource\+Manager}}
+\subsubsection{\texorpdfstring{Get\+Shader()}{GetShader()}}
+{\footnotesize\ttfamily \hyperlink{class_shader}{Shader} $\ast$ Resource\+Manager\+::\+Get\+Shader (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+zwraca shader o kluczu podanym w parametrze 
+
+\mbox{\Hypertarget{class_resource_manager_ad311e01ff4231f57b210cdf8342210c7}\label{class_resource_manager_ad311e01ff4231f57b210cdf8342210c7}} 
+\index{Resource\+Manager@{Resource\+Manager}!load\+Cubemap@{load\+Cubemap}}
+\index{load\+Cubemap@{load\+Cubemap}!Resource\+Manager@{Resource\+Manager}}
+\subsubsection{\texorpdfstring{load\+Cubemap()}{loadCubemap()}}
+{\footnotesize\ttfamily unsigned int Resource\+Manager\+::load\+Cubemap (\begin{DoxyParamCaption}\item[{vector$<$ std\+::string $>$}]{faces }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+laduje tekstury skyboxa z pliku i tworzy z nich skyboxa 
+
+vector$<$std\+::string$>$ faces -\/ wektor przechowujacy obrazki z ktorych ma zostac zbudowany skybox \mbox{\Hypertarget{class_resource_manager_a21ff03ed8d88126243b33bb75fb308b7}\label{class_resource_manager_a21ff03ed8d88126243b33bb75fb308b7}} 
+\index{Resource\+Manager@{Resource\+Manager}!load\+Shader@{load\+Shader}}
+\index{load\+Shader@{load\+Shader}!Resource\+Manager@{Resource\+Manager}}
+\subsubsection{\texorpdfstring{load\+Shader()}{loadShader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Resource\+Manager\+::load\+Shader (\begin{DoxyParamCaption}\item[{string}]{v\+Shader\+File,  }\item[{string}]{f\+Shader\+File,  }\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+kompiluje shadery z plikow o podanych nazwach i przechowuje ich id w mapie pod kluczem podanym w parametrze name 
+
+\mbox{\Hypertarget{class_resource_manager_a813e553b7f7df873b455e86ab7445b1c}\label{class_resource_manager_a813e553b7f7df873b455e86ab7445b1c}} 
+\index{Resource\+Manager@{Resource\+Manager}!load\+Shader@{load\+Shader}}
+\index{load\+Shader@{load\+Shader}!Resource\+Manager@{Resource\+Manager}}
+\subsubsection{\texorpdfstring{load\+Shader()}{loadShader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Resource\+Manager\+::load\+Shader (\begin{DoxyParamCaption}\item[{string}]{v\+Shader\+File,  }\item[{string}]{f\+Shader\+File,  }\item[{string}]{g\+Shader\+File,  }\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+kompiluje shadery z plikow o podanych nazwach i przechowuje ich id w mapie pod kluczem podanym w parametrze name 
+
+\mbox{\Hypertarget{class_resource_manager_a35ccd9bf812af37f10a17e061402e11f}\label{class_resource_manager_a35ccd9bf812af37f10a17e061402e11f}} 
+\index{Resource\+Manager@{Resource\+Manager}!Load\+Texture@{Load\+Texture}}
+\index{Load\+Texture@{Load\+Texture}!Resource\+Manager@{Resource\+Manager}}
+\subsubsection{\texorpdfstring{Load\+Texture()}{LoadTexture()}}
+{\footnotesize\ttfamily \hyperlink{class_texture}{Texture} Resource\+Manager\+::\+Load\+Texture (\begin{DoxyParamCaption}\item[{const G\+Lchar $\ast$}]{file,  }\item[{G\+Lboolean}]{alpha,  }\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+laduje teksture z pliku podanego w parametrze i zapisuje ja w mapie 
+
+param$>$ string name -\/ klucz pod ktorym zostanie zapisana tekstura /param$>$ \mbox{\Hypertarget{class_resource_manager_af49529027ae46f78df99bc4f499e1302}\label{class_resource_manager_af49529027ae46f78df99bc4f499e1302}} 
+\index{Resource\+Manager@{Resource\+Manager}!load\+V\+AO@{load\+V\+AO}}
+\index{load\+V\+AO@{load\+V\+AO}!Resource\+Manager@{Resource\+Manager}}
+\subsubsection{\texorpdfstring{load\+V\+A\+O()}{loadVAO()}}
+{\footnotesize\ttfamily \hyperlink{class_vao_object}{Vao\+Object} Resource\+Manager\+::load\+V\+AO (\begin{DoxyParamCaption}\item[{G\+Lfloat $\ast$}]{vertices\+Array,  }\item[{G\+Luint}]{number\+Of\+Values,  }\item[{bool}]{normals,  }\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+laduje V\+AO z pliku podanego w parametrze i zapisuje je w mapie 
+
+string name -\/ klucz pod ktorym zostanie zapisane V\+AO 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/szymk/\+Downloads/\+Nowy folder/\+Simple\+Game\+Engine/\+Simple\+Game\+Engine/\+G\+Kp/Resource\+Manager.\+h\item 
+C\+:/\+Users/szymk/\+Downloads/\+Nowy folder/\+Simple\+Game\+Engine/\+Simple\+Game\+Engine/\+G\+Kp/Game.\+cpp\item 
+C\+:/\+Users/szymk/\+Downloads/\+Nowy folder/\+Simple\+Game\+Engine/\+Simple\+Game\+Engine/\+G\+Kp/Resource\+Manager.\+cpp\end{DoxyCompactItemize}

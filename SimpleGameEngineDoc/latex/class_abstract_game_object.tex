@@ -1,0 +1,97 @@
+\hypertarget{class_abstract_game_object}{}\section{Abstract\+Game\+Object Class Reference}
+\label{class_abstract_game_object}\index{Abstract\+Game\+Object@{Abstract\+Game\+Object}}
+
+
+Abstrakcyjna klasa definiujaca interfejs dla obiektow w grze. Jej implementacje mozna znalesc w klasach \hyperlink{class_physical_object}{Physical\+Object} oraz \hyperlink{class_simple_object}{Simple\+Object}. /summary$>$  
+
+
+
+
+{\ttfamily \#include $<$Abstract\+Game\+Object.\+h$>$}
+
+Inheritance diagram for Abstract\+Game\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_abstract_game_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_abstract_game_object_aaf1bae3e1afb1b7269122466d41cb350}{$\sim$\+Abstract\+Game\+Object} ()
+\item 
+\mbox{\Hypertarget{class_abstract_game_object_aeec87788c72b2492040917cabb7f5c6e}\label{class_abstract_game_object_aeec87788c72b2492040917cabb7f5c6e}} 
+virtual void {\bfseries set\+Position} (glm\+::vec3 position)=0
+\item 
+virtual glm\+::vec3 \hyperlink{class_abstract_game_object_ac934d513fd18a520d8b68dd5a7ac7399}{get\+Position} ()=0
+\item 
+virtual void \hyperlink{class_abstract_game_object_a162f800603ac5671ff24ad8042c062b5}{update} ()=0
+\item 
+\mbox{\Hypertarget{class_abstract_game_object_a77d713fdeeed8310e4152dbf352d988e}\label{class_abstract_game_object_a77d713fdeeed8310e4152dbf352d988e}} 
+virtual void {\bfseries draw} ()=0
+\item 
+\mbox{\Hypertarget{class_abstract_game_object_a4688b8a17299804d82c99160851b68ce}\label{class_abstract_game_object_a4688b8a17299804d82c99160851b68ce}} 
+virtual void {\bfseries set\+Visible} (bool visible)=0
+\item 
+virtual bool \hyperlink{class_abstract_game_object_afddc4040f2d1a7effc0e0baa9950b2e2}{is\+Visible} ()=0
+\item 
+\mbox{\Hypertarget{class_abstract_game_object_a1fdfaf1362c1635965dd194d7f22743c}\label{class_abstract_game_object_a1fdfaf1362c1635965dd194d7f22743c}} 
+virtual void {\bfseries to\+Xml} (X\+M\+L\+Document $\ast$xml\+Doc)=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_abstract_game_object_a3a116439cb78825f98b1252746d16dc0}\label{class_abstract_game_object_a3a116439cb78825f98b1252746d16dc0}} 
+bool {\bfseries visible}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstrakcyjna klasa definiujaca interfejs dla obiektow w grze. Jej implementacje mozna znalesc w klasach \hyperlink{class_physical_object}{Physical\+Object} oraz \hyperlink{class_simple_object}{Simple\+Object}. /summary$>$ 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_abstract_game_object_aaf1bae3e1afb1b7269122466d41cb350}\label{class_abstract_game_object_aaf1bae3e1afb1b7269122466d41cb350}} 
+\index{Abstract\+Game\+Object@{Abstract\+Game\+Object}!````~Abstract\+Game\+Object@{$\sim$\+Abstract\+Game\+Object}}
+\index{````~Abstract\+Game\+Object@{$\sim$\+Abstract\+Game\+Object}!Abstract\+Game\+Object@{Abstract\+Game\+Object}}
+\subsubsection{\texorpdfstring{$\sim$\+Abstract\+Game\+Object()}{~AbstractGameObject()}}
+{\footnotesize\ttfamily Abstract\+Game\+Object\+::$\sim$\+Abstract\+Game\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+summary$>$ Metoda sluzaca do ustawiania pozycji obiektu /summary$>$ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_abstract_game_object_ac934d513fd18a520d8b68dd5a7ac7399}\label{class_abstract_game_object_ac934d513fd18a520d8b68dd5a7ac7399}} 
+\index{Abstract\+Game\+Object@{Abstract\+Game\+Object}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Abstract\+Game\+Object@{Abstract\+Game\+Object}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily virtual glm\+::vec3 Abstract\+Game\+Object\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+summary$>$ metoda wywolywana co klatke aktualizujaca stan obiektu /summary$>$ 
+
+Implemented in \hyperlink{class_simple_object_acaf96b4cf35863ca69a123d9404f4e5f}{Simple\+Object}.
+
+\mbox{\Hypertarget{class_abstract_game_object_afddc4040f2d1a7effc0e0baa9950b2e2}\label{class_abstract_game_object_afddc4040f2d1a7effc0e0baa9950b2e2}} 
+\index{Abstract\+Game\+Object@{Abstract\+Game\+Object}!is\+Visible@{is\+Visible}}
+\index{is\+Visible@{is\+Visible}!Abstract\+Game\+Object@{Abstract\+Game\+Object}}
+\subsubsection{\texorpdfstring{is\+Visible()}{isVisible()}}
+{\footnotesize\ttfamily virtual bool Abstract\+Game\+Object\+::is\+Visible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+summary$>$ metoda dodajaca fragment bedacy opisem obiektu jako X\+ML do dokumentu na ktory wskaznik podawany jest w parametrze /summary$>$ 
+
+Implemented in \hyperlink{class_simple_object_a2475d0a90f1cb7bc5765a632efe9ddd4}{Simple\+Object}.
+
+\mbox{\Hypertarget{class_abstract_game_object_a162f800603ac5671ff24ad8042c062b5}\label{class_abstract_game_object_a162f800603ac5671ff24ad8042c062b5}} 
+\index{Abstract\+Game\+Object@{Abstract\+Game\+Object}!update@{update}}
+\index{update@{update}!Abstract\+Game\+Object@{Abstract\+Game\+Object}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void Abstract\+Game\+Object\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+summary$>$ metoda wywolywana co klatke rysujaca obiekt na ekranie /summary$>$ 
+
+Implemented in \hyperlink{class_physical_object_a3005ac0afce838049101db17525f6004}{Physical\+Object}, and \hyperlink{class_simple_object_a38a3ceafd11a673fd68dd87ed6ebd35b}{Simple\+Object}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/szymk/\+Downloads/\+Nowy folder/\+Simple\+Game\+Engine/\+Simple\+Game\+Engine/\+G\+Kp/Abstract\+Game\+Object.\+h\item 
+C\+:/\+Users/szymk/\+Downloads/\+Nowy folder/\+Simple\+Game\+Engine/\+Simple\+Game\+Engine/\+G\+Kp/Abstract\+Game\+Object.\+cpp\end{DoxyCompactItemize}

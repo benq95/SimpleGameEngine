@@ -1,0 +1,88 @@
+\hypertarget{class_camera}{}\section{Camera Class Reference}
+\label{class_camera}\index{Camera@{Camera}}
+
+
+klasa reprezetujaca obiekt kamery z ktorej pozycji uzytkownik widzi swiat gry  
+
+
+
+
+{\ttfamily \#include $<$Camera.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_camera_ad81c45f1ffb7af4fc5e9299721ebfcf7}\label{class_camera_ad81c45f1ffb7af4fc5e9299721ebfcf7}} 
+{\bfseries Camera} (glm\+::vec3 position=D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+O\+S\+I\+T\+I\+ON, glm\+::vec3 up=D\+E\+F\+A\+U\+L\+T\+\_\+\+W\+O\+R\+L\+D\+\_\+\+UP, G\+Lfloat yaw=D\+E\+F\+A\+U\+L\+T\+\_\+\+Y\+AW, G\+Lfloat pitch=D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+I\+T\+CH)
+\item 
+\mbox{\Hypertarget{class_camera_affa333055635aed96518c4c66be9a70c}\label{class_camera_affa333055635aed96518c4c66be9a70c}} 
+glm\+::mat4 {\bfseries Get\+View\+Matrix} ()
+\item 
+void \hyperlink{class_camera_a42cda7239981a5618660d04bd5893556}{update} ()
+\begin{DoxyCompactList}\small\item\em metoda wywolywana co klatke. aktualizuje wektory kamery oraz jej pozycje \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_a79693c3d7c085b0252216f8348b525ce}{move\+Forward} (G\+Lfloat value)
+\begin{DoxyCompactList}\small\item\em przemieszcza kamere do przodu (wartosc ujemna przemieszcza do tylu) \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_ac0f82a424f190cc4f65e5f485d2317d2}{move\+Right} (G\+Lfloat value)
+\item 
+void \hyperlink{class_camera_a945b9054e8f7f840d29bff164cf57f65}{move\+Up} (G\+Lfloat value)
+\item 
+\mbox{\Hypertarget{class_camera_aad3c6e5fa354cd87ee7404092f21cc66}\label{class_camera_aad3c6e5fa354cd87ee7404092f21cc66}} 
+void {\bfseries rotate\+Camera} (G\+Lfloat x, G\+Lfloat y)
+\item 
+glm\+::vec3 \hyperlink{class_camera_ab40fb75b3d34a86d92fff61bb1675097}{get\+Pos} ()
+\item 
+\mbox{\Hypertarget{class_camera_a3da785a7091a11554a63b7ef387ee317}\label{class_camera_a3da785a7091a11554a63b7ef387ee317}} 
+glm\+::vec3 {\bfseries getfront} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+klasa reprezetujaca obiekt kamery z ktorej pozycji uzytkownik widzi swiat gry 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_camera_ab40fb75b3d34a86d92fff61bb1675097}\label{class_camera_ab40fb75b3d34a86d92fff61bb1675097}} 
+\index{Camera@{Camera}!get\+Pos@{get\+Pos}}
+\index{get\+Pos@{get\+Pos}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{get\+Pos()}{getPos()}}
+{\footnotesize\ttfamily glm\+::vec3 Camera\+::get\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+summary$>$ pobiera wektor wskazujacy kierunek skierowania kamery /summary$>$ \mbox{\Hypertarget{class_camera_a79693c3d7c085b0252216f8348b525ce}\label{class_camera_a79693c3d7c085b0252216f8348b525ce}} 
+\index{Camera@{Camera}!move\+Forward@{move\+Forward}}
+\index{move\+Forward@{move\+Forward}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{move\+Forward()}{moveForward()}}
+{\footnotesize\ttfamily void Camera\+::move\+Forward (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{value }\end{DoxyParamCaption})}
+
+
+
+przemieszcza kamere do przodu (wartosc ujemna przemieszcza do tylu) 
+
+summary$>$ przemieszcza kamere w prawo (podanie wartosci ujemnej przemieszcza w lewo) /summary$>$ \mbox{\Hypertarget{class_camera_ac0f82a424f190cc4f65e5f485d2317d2}\label{class_camera_ac0f82a424f190cc4f65e5f485d2317d2}} 
+\index{Camera@{Camera}!move\+Right@{move\+Right}}
+\index{move\+Right@{move\+Right}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{move\+Right()}{moveRight()}}
+{\footnotesize\ttfamily void Camera\+::move\+Right (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{value }\end{DoxyParamCaption})}
+
+summary$>$ przemieszcza kamere do gory (lub w dol dla wartosci ujemnej) /summary$>$ \mbox{\Hypertarget{class_camera_a945b9054e8f7f840d29bff164cf57f65}\label{class_camera_a945b9054e8f7f840d29bff164cf57f65}} 
+\index{Camera@{Camera}!move\+Up@{move\+Up}}
+\index{move\+Up@{move\+Up}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{move\+Up()}{moveUp()}}
+{\footnotesize\ttfamily void Camera\+::move\+Up (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{value }\end{DoxyParamCaption})}
+
+summary$>$ obraca kamere /summary$>$ \mbox{\Hypertarget{class_camera_a42cda7239981a5618660d04bd5893556}\label{class_camera_a42cda7239981a5618660d04bd5893556}} 
+\index{Camera@{Camera}!update@{update}}
+\index{update@{update}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Camera\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+metoda wywolywana co klatke. aktualizuje wektory kamery oraz jej pozycje 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/szymk/\+Downloads/\+Nowy folder/\+Simple\+Game\+Engine/\+Simple\+Game\+Engine/\+G\+Kp/Camera.\+h\item 
+C\+:/\+Users/szymk/\+Downloads/\+Nowy folder/\+Simple\+Game\+Engine/\+Simple\+Game\+Engine/\+G\+Kp/Camera.\+cpp\end{DoxyCompactItemize}

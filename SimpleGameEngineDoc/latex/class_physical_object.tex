@@ -1,0 +1,75 @@
+\hypertarget{class_physical_object}{}\section{Physical\+Object Class Reference}
+\label{class_physical_object}\index{Physical\+Object@{Physical\+Object}}
+
+
+klasa rozszerzajaca klase \hyperlink{class_simple_object}{Simple\+Object} posiada dodatkowe pole opisujace ksztalt oraz wlasciwosci obiektu fizycznego /summary$>$  
+
+
+
+
+{\ttfamily \#include $<$Physical\+Object.\+h$>$}
+
+Inheritance diagram for Physical\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_physical_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_physical_object_aee54168bb54a6b9c3d340c9f818a7b53}\label{class_physical_object_aee54168bb54a6b9c3d340c9f818a7b53}} 
+{\bfseries Physical\+Object} (glm\+::vec3 position, \hyperlink{class_shader}{Shader} $\ast$shader, \hyperlink{class_texture}{Texture} texture, \hyperlink{class_vao_object}{Vao\+Object} $\ast$vao)
+\item 
+\mbox{\Hypertarget{class_physical_object_a3e3f19518fbd261817e42c5a78fb543d}\label{class_physical_object_a3e3f19518fbd261817e42c5a78fb543d}} 
+{\bfseries Physical\+Object} (glm\+::vec3 position, \hyperlink{class_shader}{Shader} $\ast$shader, \hyperlink{class_texture}{Texture} texture, \hyperlink{class_vao_object}{Vao\+Object} $\ast$vao, bt\+Rigid\+Body $\ast$rig\+Body)
+\item 
+\mbox{\Hypertarget{class_physical_object_af216654d65cdf55b16f1f9da03572dee}\label{class_physical_object_af216654d65cdf55b16f1f9da03572dee}} 
+{\bfseries Physical\+Object} (glm\+::vec3 position, \hyperlink{class_shader}{Shader} $\ast$shader, \hyperlink{class_texture}{Texture} texture, \hyperlink{class_vao_object}{Vao\+Object} $\ast$vao, std\+::string rigid\+Body\+Type)
+\item 
+\mbox{\Hypertarget{class_physical_object_a8e21f75621841ccd58a7cc757fb1c445}\label{class_physical_object_a8e21f75621841ccd58a7cc757fb1c445}} 
+{\bfseries Physical\+Object} (glm\+::mat4 transform, \hyperlink{class_shader}{Shader} $\ast$shader, \hyperlink{class_texture}{Texture} texture, \hyperlink{class_vao_object}{Vao\+Object} $\ast$vao, std\+::string rigid\+Body\+Type)
+\item 
+\mbox{\Hypertarget{class_physical_object_a729b7781a7f7de8dd076f28cca54742f}\label{class_physical_object_a729b7781a7f7de8dd076f28cca54742f}} 
+{\bfseries Physical\+Object} (glm\+::vec3 position, \hyperlink{class_shader}{Shader} $\ast$shader, \hyperlink{class_texture}{Texture} texture, \hyperlink{class_vao_object}{Vao\+Object} $\ast$vao, std\+::string rigid\+Body\+Type, glm\+::vec3 dir)
+\item 
+\mbox{\Hypertarget{class_physical_object_a99886c0d01149e4ab04d9f7598f391db}\label{class_physical_object_a99886c0d01149e4ab04d9f7598f391db}} 
+bt\+Rigid\+Body $\ast$ {\bfseries get\+Rigid\+Body} ()
+\item 
+\mbox{\Hypertarget{class_physical_object_a4aefb72365f6a824a04d0090bfe8c078}\label{class_physical_object_a4aefb72365f6a824a04d0090bfe8c078}} 
+void {\bfseries set\+Rigid\+Body} (bt\+Rigid\+Body $\ast$ridig\+Body)
+\item 
+\mbox{\Hypertarget{class_physical_object_a593d2b001986681081bd39a134788ef8}\label{class_physical_object_a593d2b001986681081bd39a134788ef8}} 
+void {\bfseries set\+Collision\+Shape} (bt\+Collision\+Shape $\ast$collision\+Shape)
+\item 
+void \hyperlink{class_physical_object_a3005ac0afce838049101db17525f6004}{update} ()
+\item 
+\mbox{\Hypertarget{class_physical_object_a48b1709afb0f331deb7b59e5d98ccdc5}\label{class_physical_object_a48b1709afb0f331deb7b59e5d98ccdc5}} 
+virtual void {\bfseries to\+Xml} (X\+M\+L\+Document $\ast$xml\+Doc)
+\item 
+\mbox{\Hypertarget{class_physical_object_a6148d7d581c15eafa4d8a885719083dc}\label{class_physical_object_a6148d7d581c15eafa4d8a885719083dc}} 
+void {\bfseries set\+Rigid\+Body\+Type} (std\+::string type)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+klasa rozszerzajaca klase \hyperlink{class_simple_object}{Simple\+Object} posiada dodatkowe pole opisujace ksztalt oraz wlasciwosci obiektu fizycznego /summary$>$ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_physical_object_a3005ac0afce838049101db17525f6004}\label{class_physical_object_a3005ac0afce838049101db17525f6004}} 
+\index{Physical\+Object@{Physical\+Object}!update@{update}}
+\index{update@{update}!Physical\+Object@{Physical\+Object}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Physical\+Object\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+summary$>$ metoda wywolywana co klatke rysujaca obiekt na ekranie /summary$>$ 
+
+Reimplemented from \hyperlink{class_simple_object_a38a3ceafd11a673fd68dd87ed6ebd35b}{Simple\+Object}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/szymk/\+Downloads/\+Nowy folder/\+Simple\+Game\+Engine/\+Simple\+Game\+Engine/\+G\+Kp/Physical\+Object.\+h\item 
+C\+:/\+Users/szymk/\+Downloads/\+Nowy folder/\+Simple\+Game\+Engine/\+Simple\+Game\+Engine/\+G\+Kp/Physical\+Object.\+cpp\end{DoxyCompactItemize}

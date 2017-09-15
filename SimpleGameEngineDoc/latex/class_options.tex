@@ -1,0 +1,91 @@
+\hypertarget{class_options}{}\section{Options Class Reference}
+\label{class_options}\index{Options@{Options}}
+
+
+klasa przedstawiajaca opcje w grze. Z jej wartosci korzysta klasa glowna gry \hyperlink{class_game}{Game}. Jest edytowana przez klase N\+Kwindow /summary$>$  
+
+
+
+
+{\ttfamily \#include $<$Options.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_options_a0f3128a75a8707002955c2dc4b26b2ec}\label{class_options_a0f3128a75a8707002955c2dc4b26b2ec}} 
+enum {\bfseries shape} \{ {\bfseries B\+R\+I\+CK}, 
+{\bfseries B\+A\+LL}
+ \}
+\item 
+\mbox{\Hypertarget{class_options_a1146a0adfa5192cf7fee8b6449615da6}\label{class_options_a1146a0adfa5192cf7fee8b6449615da6}} 
+enum {\bfseries type} \{ {\bfseries S\+H\+O\+OT}, 
+{\bfseries P\+L\+A\+CE}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_options_aefd7611d75f212275fa9acd1b9ba7678}\label{class_options_aefd7611d75f212275fa9acd1b9ba7678}} 
+std\+::string {\bfseries get\+Actual\+Texture} ()
+\item 
+\mbox{\Hypertarget{class_options_a0391736b6fb81e736b43d2c85e9a6d30}\label{class_options_a0391736b6fb81e736b43d2c85e9a6d30}} 
+std\+::string {\bfseries get\+Actual\+Shape} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_options_a200bd73d95e481268e8af998682259fa}\label{class_options_a200bd73d95e481268e8af998682259fa}} 
+bool {\bfseries paused}
+\item 
+\mbox{\Hypertarget{class_options_ab1617285c57360aa3ad7c97497180cda}\label{class_options_ab1617285c57360aa3ad7c97497180cda}} 
+bool {\bfseries save} =false
+\item 
+\mbox{\Hypertarget{class_options_a2530dbc672ce950c83419b1499f744e5}\label{class_options_a2530dbc672ce950c83419b1499f744e5}} 
+bool {\bfseries load} =false
+\item 
+\mbox{\Hypertarget{class_options_a29188c90678b35632ab6ba78bb2dc5f5}\label{class_options_a29188c90678b35632ab6ba78bb2dc5f5}} 
+G\+Lfloat {\bfseries ambient\+Strength}
+\item 
+\mbox{\Hypertarget{class_options_aad941c1d1e38733a2da0d106a2b42900}\label{class_options_aad941c1d1e38733a2da0d106a2b42900}} 
+glm\+::vec3 {\bfseries ambient\+Color}
+\item 
+\mbox{\Hypertarget{class_options_a0c249572242c1ad85b96f98c3e733a8e}\label{class_options_a0c249572242c1ad85b96f98c3e733a8e}} 
+int {\bfseries create\+Shape} = B\+R\+I\+CK
+\item 
+int \hyperlink{class_options_abf0c0bd98f610208b37d5ccc29986c12}{create\+Type} = P\+L\+A\+CE
+\item 
+std\+::vector$<$ std\+::string $>$ \hyperlink{class_options_a1302853b860cb9384f79253c8ff13965}{texture\+Names}
+\item 
+\mbox{\Hypertarget{class_options_afc122ce401f77ffe11316e5412eb69ce}\label{class_options_afc122ce401f77ffe11316e5412eb69ce}} 
+std\+::string {\bfseries actual\+Texture}
+\item 
+\mbox{\Hypertarget{class_options_ae0768e34daf66c942ed92ee3481bc806}\label{class_options_ae0768e34daf66c942ed92ee3481bc806}} 
+int {\bfseries actual\+Texture\+ID} =0
+\item 
+\mbox{\Hypertarget{class_options_a7db76294fe05468adaa599a9d88ec894}\label{class_options_a7db76294fe05468adaa599a9d88ec894}} 
+float {\bfseries power} =5.\+0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+klasa przedstawiajaca opcje w grze. Z jej wartosci korzysta klasa glowna gry \hyperlink{class_game}{Game}. Jest edytowana przez klase N\+Kwindow /summary$>$ 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_options_abf0c0bd98f610208b37d5ccc29986c12}\label{class_options_abf0c0bd98f610208b37d5ccc29986c12}} 
+\index{Options@{Options}!create\+Type@{create\+Type}}
+\index{create\+Type@{create\+Type}!Options@{Options}}
+\subsubsection{\texorpdfstring{create\+Type}{createType}}
+{\footnotesize\ttfamily int Options\+::create\+Type = P\+L\+A\+CE}
+
+summary$>$ wektor przechowujacy nazwy tekstur. na jego podstawie generowane jest menu sluzace do wyboru tekstury /summary$>$ \mbox{\Hypertarget{class_options_a1302853b860cb9384f79253c8ff13965}\label{class_options_a1302853b860cb9384f79253c8ff13965}} 
+\index{Options@{Options}!texture\+Names@{texture\+Names}}
+\index{texture\+Names@{texture\+Names}!Options@{Options}}
+\subsubsection{\texorpdfstring{texture\+Names}{textureNames}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::string$>$ Options\+::texture\+Names}
+
+summary$>$ nazwa aktualnie /summary$>$ 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/szymk/\+Downloads/\+Nowy folder/\+Simple\+Game\+Engine/\+Simple\+Game\+Engine/\+G\+Kp/Options.\+h\item 
+C\+:/\+Users/szymk/\+Downloads/\+Nowy folder/\+Simple\+Game\+Engine/\+Simple\+Game\+Engine/\+G\+Kp/Options.\+cpp\end{DoxyCompactItemize}

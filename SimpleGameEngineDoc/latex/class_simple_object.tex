@@ -1,0 +1,138 @@
+\hypertarget{class_simple_object}{}\section{Simple\+Object Class Reference}
+\label{class_simple_object}\index{Simple\+Object@{Simple\+Object}}
+
+
+klasa implementujaca \hyperlink{class_abstract_game_object}{Abstract\+Game\+Object}. Reprezetuje podstawowy obiekt gry nie posiadajacy wlasciwosci fizycznych /summary$>$  
+
+
+
+
+{\ttfamily \#include $<$Simple\+Object.\+h$>$}
+
+Inheritance diagram for Simple\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_simple_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simple_object_a4b237a7f96bed83ec599c0af41a9dbf6}\label{class_simple_object_a4b237a7f96bed83ec599c0af41a9dbf6}} 
+{\bfseries Simple\+Object} (glm\+::vec3 position, \hyperlink{class_shader}{Shader} $\ast$shader, \hyperlink{class_texture}{Texture} texture, \hyperlink{class_vao_object}{Vao\+Object} $\ast$vao)
+\item 
+\mbox{\Hypertarget{class_simple_object_ad0d7d8b5224adfb044be1a9a11dbdda8}\label{class_simple_object_ad0d7d8b5224adfb044be1a9a11dbdda8}} 
+{\bfseries Simple\+Object} (glm\+::mat4 transform, \hyperlink{class_shader}{Shader} $\ast$shader, \hyperlink{class_texture}{Texture} texture, \hyperlink{class_vao_object}{Vao\+Object} $\ast$vao)
+\item 
+\mbox{\Hypertarget{class_simple_object_a24bfa1fa17d1097cb197f6350862c39f}\label{class_simple_object_a24bfa1fa17d1097cb197f6350862c39f}} 
+{\bfseries Simple\+Object} (glm\+::vec3 position)
+\item 
+\mbox{\Hypertarget{class_simple_object_a59ed585f31accdf25d14dedbe3463d93}\label{class_simple_object_a59ed585f31accdf25d14dedbe3463d93}} 
+{\bfseries Simple\+Object} (\hyperlink{class_texture}{Texture} texture, glm\+::mat4 model\+Matrix, \hyperlink{class_vao_object}{Vao\+Object} $\ast$V\+AO)
+\item 
+virtual void \hyperlink{class_simple_object_a38a3ceafd11a673fd68dd87ed6ebd35b}{update} ()
+\item 
+\mbox{\Hypertarget{class_simple_object_a920aa438e4414745847cf284ca00e71d}\label{class_simple_object_a920aa438e4414745847cf284ca00e71d}} 
+virtual void {\bfseries draw} ()
+\item 
+\mbox{\Hypertarget{class_simple_object_aa4d4ccdd87ff9ee1676573e6a1f8a335}\label{class_simple_object_aa4d4ccdd87ff9ee1676573e6a1f8a335}} 
+virtual void {\bfseries set\+Shader} (\hyperlink{class_shader}{Shader} $\ast$shader)
+\item 
+\mbox{\Hypertarget{class_simple_object_a23f24ff02b60e625170e7c00991eeff6}\label{class_simple_object_a23f24ff02b60e625170e7c00991eeff6}} 
+void {\bfseries set\+Texture} (\hyperlink{class_texture}{Texture} texture)
+\item 
+\mbox{\Hypertarget{class_simple_object_a87e1ea0f304176fdb6b61fdd50acedcb}\label{class_simple_object_a87e1ea0f304176fdb6b61fdd50acedcb}} 
+void {\bfseries set\+Vao} (\hyperlink{class_vao_object}{Vao\+Object} $\ast$vao)
+\item 
+\mbox{\Hypertarget{class_simple_object_af6c38301b53a5dd83f38219a62dd5c61}\label{class_simple_object_af6c38301b53a5dd83f38219a62dd5c61}} 
+virtual void {\bfseries set\+Position} (glm\+::vec3 position)
+\item 
+virtual glm\+::vec3 \hyperlink{class_simple_object_acaf96b4cf35863ca69a123d9404f4e5f}{get\+Position} ()
+\item 
+\mbox{\Hypertarget{class_simple_object_a2a4eba5cc71f93824b66d9b1669032e2}\label{class_simple_object_a2a4eba5cc71f93824b66d9b1669032e2}} 
+virtual void {\bfseries set\+Visible} (bool visible)
+\item 
+virtual bool \hyperlink{class_simple_object_a2475d0a90f1cb7bc5765a632efe9ddd4}{is\+Visible} ()
+\item 
+\mbox{\Hypertarget{class_simple_object_ad4473aa5bb43047e70b3de73db5c0471}\label{class_simple_object_ad4473aa5bb43047e70b3de73db5c0471}} 
+virtual void {\bfseries add\+Behaviour} (\hyperlink{class_behaviour}{Behaviour} $\ast$behaviour)
+\item 
+\mbox{\Hypertarget{class_simple_object_a89467e4932063b53734ac0e0ff5c05eb}\label{class_simple_object_a89467e4932063b53734ac0e0ff5c05eb}} 
+virtual void {\bfseries to\+Xml} (X\+M\+L\+Document $\ast$xml\+Doc)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simple_object_aa6790553dc4f308a99e35ab1f8ad0a64}\label{class_simple_object_aa6790553dc4f308a99e35ab1f8ad0a64}} 
+virtual void {\bfseries set\+V\+AO} (\hyperlink{class_vao_object}{Vao\+Object} $\ast$V\+AO)
+\item 
+\mbox{\Hypertarget{class_simple_object_a906ee1d2032b6f25fdc8eedabf4ac943}\label{class_simple_object_a906ee1d2032b6f25fdc8eedabf4ac943}} 
+virtual void {\bfseries set\+Model\+Matrix} (glm\+::mat4 model\+Matrix)
+\item 
+\mbox{\Hypertarget{class_simple_object_af9aca9384bdda21372ab0f28f02af499}\label{class_simple_object_af9aca9384bdda21372ab0f28f02af499}} 
+void {\bfseries model\+Matrix\+To\+Xml} (X\+M\+L\+Element $\ast$matrix)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_simple_object_afb4e75c108263067f5347198a5e1d890}\label{class_simple_object_afb4e75c108263067f5347198a5e1d890}} 
+glm\+::mat4 {\bfseries model\+Matrix}
+\item 
+\mbox{\Hypertarget{class_simple_object_aa2c839c6fd33d925ffe37949c2f365a8}\label{class_simple_object_aa2c839c6fd33d925ffe37949c2f365a8}} 
+\hyperlink{class_shader}{Shader} $\ast$ {\bfseries shader}
+\item 
+\mbox{\Hypertarget{class_simple_object_a8339746daf36763a8a4312a19ff123de}\label{class_simple_object_a8339746daf36763a8a4312a19ff123de}} 
+\hyperlink{class_vao_object}{Vao\+Object} $\ast$ {\bfseries vao}
+\item 
+\mbox{\Hypertarget{class_simple_object_af94137a8b0e4e71adba0a828263f523a}\label{class_simple_object_af94137a8b0e4e71adba0a828263f523a}} 
+\hyperlink{class_texture}{Texture} {\bfseries texture}
+\item 
+\mbox{\Hypertarget{class_simple_object_ac47c5390bef50cb4b852119274b66ab9}\label{class_simple_object_ac47c5390bef50cb4b852119274b66ab9}} 
+std\+::list$<$ \hyperlink{class_behaviour}{Behaviour} $\ast$ $>$ {\bfseries behaviours}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+klasa implementujaca \hyperlink{class_abstract_game_object}{Abstract\+Game\+Object}. Reprezetuje podstawowy obiekt gry nie posiadajacy wlasciwosci fizycznych /summary$>$ 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_simple_object_acaf96b4cf35863ca69a123d9404f4e5f}\label{class_simple_object_acaf96b4cf35863ca69a123d9404f4e5f}} 
+\index{Simple\+Object@{Simple\+Object}!get\+Position@{get\+Position}}
+\index{get\+Position@{get\+Position}!Simple\+Object@{Simple\+Object}}
+\subsubsection{\texorpdfstring{get\+Position()}{getPosition()}}
+{\footnotesize\ttfamily glm\+::vec3 Simple\+Object\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+summary$>$ metoda wywolywana co klatke aktualizujaca stan obiektu /summary$>$ 
+
+Implements \hyperlink{class_abstract_game_object_ac934d513fd18a520d8b68dd5a7ac7399}{Abstract\+Game\+Object}.
+
+\mbox{\Hypertarget{class_simple_object_a2475d0a90f1cb7bc5765a632efe9ddd4}\label{class_simple_object_a2475d0a90f1cb7bc5765a632efe9ddd4}} 
+\index{Simple\+Object@{Simple\+Object}!is\+Visible@{is\+Visible}}
+\index{is\+Visible@{is\+Visible}!Simple\+Object@{Simple\+Object}}
+\subsubsection{\texorpdfstring{is\+Visible()}{isVisible()}}
+{\footnotesize\ttfamily bool Simple\+Object\+::is\+Visible (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+summary$>$ metoda dodajaca fragment bedacy opisem obiektu jako X\+ML do dokumentu na ktory wskaznik podawany jest w parametrze /summary$>$ 
+
+Implements \hyperlink{class_abstract_game_object_afddc4040f2d1a7effc0e0baa9950b2e2}{Abstract\+Game\+Object}.
+
+\mbox{\Hypertarget{class_simple_object_a38a3ceafd11a673fd68dd87ed6ebd35b}\label{class_simple_object_a38a3ceafd11a673fd68dd87ed6ebd35b}} 
+\index{Simple\+Object@{Simple\+Object}!update@{update}}
+\index{update@{update}!Simple\+Object@{Simple\+Object}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Simple\+Object\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+summary$>$ metoda wywolywana co klatke rysujaca obiekt na ekranie /summary$>$ 
+
+Implements \hyperlink{class_abstract_game_object_a162f800603ac5671ff24ad8042c062b5}{Abstract\+Game\+Object}.
+
+
+
+Reimplemented in \hyperlink{class_physical_object_a3005ac0afce838049101db17525f6004}{Physical\+Object}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/szymk/\+Downloads/\+Nowy folder/\+Simple\+Game\+Engine/\+Simple\+Game\+Engine/\+G\+Kp/Simple\+Object.\+h\item 
+C\+:/\+Users/szymk/\+Downloads/\+Nowy folder/\+Simple\+Game\+Engine/\+Simple\+Game\+Engine/\+G\+Kp/Simple\+Object.\+cpp\end{DoxyCompactItemize}
