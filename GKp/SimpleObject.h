@@ -8,7 +8,9 @@
 #include"tinyxml2.h"
 
 using namespace tinyxml2;
-
+///<summary>
+/// klasa implementujaca AbstractGameObject. Reprezetuje podstawowy obiekt gry nie posiadajacy wlasciwosci fizycznych
+///</summary>
 class SimpleObject :
 	public AbstractGameObject
 {

@@ -2,6 +2,10 @@
 #include "Behaviour.h"
 #include "Shader.h"
 #include "List"
+
+/// <summary>
+/// struktura ktora miala przechowywac dane o czasteczce wchodzacej w sklad efektu czasteczkowego
+/// </summary>
 struct Particle
 {
 	float Type;
@@ -9,6 +13,10 @@ struct Particle
 	glm::vec3 vel;
 	float lifetime;
 };
+
+///<summary>
+/// klasa ktorej celem bylo symulowanie efektu czasteczkowego. nie udalo uzyskac sie jak narazie poprawnej implementacji
+///</summary>
 class ParticleEffect :
 	public Behaviour
 {

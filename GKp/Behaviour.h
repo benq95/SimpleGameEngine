@@ -1,6 +1,9 @@
 #pragma once
 #include"AbstractGameObject.h"
 
+/// <summary>
+/// abstrakcyjna klasa ktora miala miec mozliwosc dodawania dodatkowych zachowan do obiektow. Nie doczekala sie swojej implementacji.
+/// </summary>
 class Behaviour
 {
 public:

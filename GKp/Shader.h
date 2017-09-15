@@ -1,6 +1,10 @@
 #pragma once
 #include<iostream>
 #include<string>
+///<summary>
+///klasa umo¿liwiaj¹ca kompilacje shaderow. Przechowywane w polu numer ID shadera. Posiada metodê use() która wywo³uje funkcjê glUseProgram dla ID przechowywanego w polu obiektu.
+///
+///</summary>
 class Shader
 {
 public:

@@ -39,7 +39,7 @@ void Game::changeCameraDirection(GLfloat x, GLfloat y)
 	camera.rotateCamera(x, y);
 }
 
-void Game::mainGameloop()
+void Game::startMainGameLoop()
 {
 	while (!glfwWindowShouldClose(window))
 	{
@@ -269,7 +269,7 @@ void Game::parseXml(std::string name)
 		}
 		else{
 			newObject = new PhysicalObject(transform, ResourceManager::GetShader(shaderName), ResourceManager::GetTexture(textureName), ResourceManager::getVAO(vaoName), type);
-			world.addPhyObj((PhysicalObject*)newObject);
+			world.addPhysicalObject((PhysicalObject*)newObject);
 		}
 		gameObjects.push_front(newObject);
 		

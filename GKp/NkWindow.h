@@ -1,5 +1,8 @@
 #pragma once
 #include"Options.h"
+///<summary>
+///  klasa przedstawiajaca okno opcji w grze. 
+///</summary>
 class NkWindow
 {
 public:

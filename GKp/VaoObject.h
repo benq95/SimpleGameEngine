@@ -1,4 +1,6 @@
 #pragma once
+///<summary>Klasa ta umo¿liwia generowanie Vao na podstawie tablicy wierzcho³ków. W tablicy wierzcho³ków przechowywane s¹ ich wspó³rzêdne, wspó³rzêdne tekstur oraz opcjonalnie normalne wierzcho³ków. Klasa posiada pole przechowuj¹ce id wygenerowanego VAO.</summary>
+
 class VaoObject
 {
 public:

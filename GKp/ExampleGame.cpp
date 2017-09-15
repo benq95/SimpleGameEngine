@@ -177,7 +177,7 @@ void ExampleGame::initFloorPlane()
 	btRigidBody* groundRigidBody = new btRigidBody(groundRigidBodyCI);
 	groundRigidBody->setRestitution(1.0f);
 	floor->setRigidBody(groundRigidBody);
-	world.addPhyObj(floor);
+	world.addPhysicalObject(floor);
 	generateCubes(40,40);
 }
 
@@ -190,10 +190,6 @@ void ExampleGame::initSomeWall(int x, int y)
 	}
 }
 
-void ExampleGame::shoot()
-{
-	camera.getfront();
-}
 
 void ExampleGame::createBrick(glm::vec3 pos)
 {
@@ -210,7 +206,7 @@ void ExampleGame::createBrick(glm::vec3 pos)
 	*/
 	//btRigidBody * brickRigidBody = RigidBodySimpleFactory::createRigidBody("brick");
 	AbstractGameObject * someCube = new PhysicalObject(pos, ResourceManager::GetShader("shader1"), ResourceManager::GetTexture("brick"), ResourceManager::getVAO("brick"), "brick");
-	world.addPhyObj((PhysicalObject*)someCube);
+	world.addPhysicalObject((PhysicalObject*)someCube);
 	gameObjects.push_front(someCube);
 }
 void ExampleGame::createObject(glm::vec3 pos)
@@ -232,7 +228,7 @@ void ExampleGame::createObject(glm::vec3 pos)
 		glm::vec3 dir = camera.getfront() * power;
 		someCube = new PhysicalObject(camera.getPos(), ResourceManager::GetShader("shader1"), nt, nv, options.getActualShape(), dir);
 	}
-	world.addPhyObj((PhysicalObject*)someCube);
+	world.addPhysicalObject((PhysicalObject*)someCube);
 	gameObjects.push_front(someCube);
 }
 

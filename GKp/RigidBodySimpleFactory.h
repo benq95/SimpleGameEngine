@@ -1,6 +1,8 @@
 #pragma once
 #include <btBulletDynamicsCommon.h>
-
+///<summary>
+/// klasa odpowiadajaca za tworzenie cial fizycznych
+///</summary>
 class RigidBodySimpleFactory
 {
 public:

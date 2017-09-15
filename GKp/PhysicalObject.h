@@ -3,6 +3,11 @@
 #include <btBulletDynamicsCommon.h>
 #include "RigidBodySimpleFactory.h"
 //#include "PhysicsWorld.h"
+
+///<summary>
+/// klasa rozszerzajaca klase SimpleObject 
+/// posiada dodatkowe pole opisujace ksztalt oraz wlasciwosci obiektu fizycznego
+///</summary>
 class PhysicalObject :
 	public SimpleObject
 {

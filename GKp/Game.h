@@ -19,16 +19,35 @@
 using namespace tinyxml2;
 
 #define PRINT_FPS false
-
+///<summary>
+/// Klasa g³ówna gry. Posiada implementacje podstawowych funkcjonalnosci. Jest klasa bazowa dla ExampleGame ktora ja rozszerza o inicjalizacje zasobow, obsluge wiekszej ilosci klawiszy itd.
+///</summary>
 class Game
 {
 public:
 	Game(GLFWwindow* window);
 	~Game();
-	virtual void mainGameloop();
+	/// <summary>
+	/// metoda uruchamiajaca glowna petle gry ktora trwa az do wylaczenia programu 
+	/// </summary>
+
+	virtual void startMainGameLoop();
+	/// <summary>
+	/// metoda ustawiajaca na true flage wcisniecia klawisza o indeksie podanym w parametrze
+	/// </summary>
 	void setKey(int keyIndex);
+	/// <summary>
+	/// metoda ustawiajaca na false flage wcisniecia klawisza o indeksie podanym w parametrze
+	/// </summary>
 	void clearKey(int keyIndex);
+	/// <summary>
+	/// metoda pozwalajaca na zmiane kierunku kamery 
+	/// </summary>
+
 	void changeCameraDirection(GLfloat x,GLfloat y);
+	/// <summary>
+	/// metoda odpowiedzialna za przygotowanie wstepnego stanu gry 
+	/// </summary>
 	virtual void init();
 
 protected:

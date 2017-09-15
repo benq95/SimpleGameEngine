@@ -23,7 +23,7 @@ int main()
 		//game = new Game(window);
 		game = new ExampleGame(window);
 		game->init();
-		game->mainGameloop();
+		game->startMainGameLoop();
 	}
 	else {
 

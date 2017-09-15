@@ -1,6 +1,8 @@
 #pragma once
 #include <GL/glew.h>
-
+///<summary>
+///Klasa umo¿liwiaj¹ca generowanie tekstury na podstawie obrazu. Przechowywujê w polu ID tekstury  oraz informacje o teksturze takie jak rozmiar, wrap, filter.
+///</summary>
 class Texture
 {
 public:

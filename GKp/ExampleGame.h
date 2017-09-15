@@ -1,5 +1,6 @@
 #pragma once
 #include "Game.h"
+///<summary> klasa rozszerzajaca klase Game. posiada metody inicjalizujace poczatkowy stan oraz inicjalizacje zasobow  <summary>
 class ExampleGame :
 	public Game
 {
@@ -15,7 +16,6 @@ protected:
 	void initPrototypes();
 	void initFloorPlane();
 	void initSomeWall(int x,int y);
-	void shoot();
 	void createObject(glm::vec3 pos);
 	void createBrick(glm::vec3 pos);
 	//void createBrick(GLfloat x, GLfloat y, GLfloat z);

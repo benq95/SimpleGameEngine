@@ -48,7 +48,7 @@ void PhysicsWorld::update(double deltaTime)
 
 }
 
-void PhysicsWorld::addPhyObj(PhysicalObject * phyobj)
+void PhysicsWorld::addPhysicalObject(PhysicalObject * phyobj)
 {
 	if (world != NULL) {
 		world->addRigidBody(phyobj->getRigidBody());
