@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Assets">
+      <UniqueIdentifier>{49e770f4-f34f-4563-bcdb-45cc75ffa27f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main">
+      <UniqueIdentifier>{26200ea3-01c0-4c73-88da-af3102ed9782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ResourceManagment">
+      <UniqueIdentifier>{463fdc28-47a4-4fc4-a40a-7b29dcbb4f0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObjects">
+      <UniqueIdentifier>{2d5a6096-e83a-46e2-b4df-a7e0f12dcaaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObjects">
+      <UniqueIdentifier>{fff4029c-544b-41d6-866d-19246d24866e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ResourceManagment">
+      <UniqueIdentifier>{d4147852-4de5-4c3b-8250-b5b1e1208b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main">
+      <UniqueIdentifier>{1fd71da7-bb44-4e61-babf-83f3cf1c16fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Assets\Objects">
+      <UniqueIdentifier>{2af45383-0a21-442b-a8e6-7343d5c4b570}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Assets\Textures">
+      <UniqueIdentifier>{82dedcb4-e625-4c0e-818e-3913c327f39c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Assets\Shaders">
+      <UniqueIdentifier>{cc365931-ed99-4345-b204-b7b8d8c34178}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\External">
+      <UniqueIdentifier>{584fde2b-4f5b-4626-869b-1348fefc51d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\External">
+      <UniqueIdentifier>{eb07e92f-49a9-4592-bd1e-fdc4cae75a7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GUI">
+      <UniqueIdentifier>{46ac16b5-71af-4b65-89a5-e9c2429d7259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GUI">
+      <UniqueIdentifier>{3355baf2-5c25-417e-99e5-c72e5b6cce28}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GKp.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.h">
+      <Filter>Header Files\ResourceManagment</Filter>
+    </ClInclude>
+    <ClInclude Include="VaoObject.h">
+      <Filter>Header Files\ResourceManagment</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files\ResourceManagment</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Header Files\ResourceManagment</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractGameObject.h">
+      <Filter>Header Files\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Behaviour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEffect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicalObject.h">
+      <Filter>Header Files\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleObject.h">
+      <Filter>Header Files\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml2.h">
+      <Filter>Header Files\External</Filter>
+    </ClInclude>
+    <ClInclude Include="nuklear_glfw_gl3.h">
+      <Filter>Header Files\External</Filter>
+    </ClInclude>
+    <ClInclude Include="nuklear.h">
+      <Filter>Header Files\External</Filter>
+    </ClInclude>
+    <ClInclude Include="RigidBodySimpleFactory.h">
+      <Filter>Header Files\ResourceManagment</Filter>
+    </ClInclude>
+    <ClInclude Include="ExampleGame.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="PhysicsWorld.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="NkWindow.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Options.h">
+      <Filter>Header Files\GUI</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractGameObject.cpp">
+      <Filter>Source Files\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GKp.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="VaoObject.cpp">
+      <Filter>Source Files\ResourceManagment</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files\ResourceManagment</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files\ResourceManagment</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.cpp">
+      <Filter>Source Files\ResourceManagment</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Behaviour.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEffect.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicalObject.cpp">
+      <Filter>Source Files\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="SimpleObject.cpp">
+      <Filter>Source Files\GameObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2.cpp">
+      <Filter>Source Files\External</Filter>
+    </ClCompile>
+    <ClCompile Include="RigidBodySimpleFactory.cpp">
+      <Filter>Source Files\ResourceManagment</Filter>
+    </ClCompile>
+    <ClCompile Include="PhysicsWorld.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ExampleGame.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="NkWindow.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Options.cpp">
+      <Filter>Source Files\GUI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader1.vs">
+      <Filter>Resource Files\Assets\Shaders</Filter>
+    </None>
+    <None Include="shader1.fs">
+      <Filter>Resource Files\Assets\Shaders</Filter>
+    </None>
+    <None Include="particlesEffect.vs">
+      <Filter>Resource Files\Assets\Shaders</Filter>
+    </None>
+    <None Include="particlesEffect.gs">
+      <Filter>Resource Files\Assets\Shaders</Filter>
+    </None>
+    <None Include="sbs.vs">
+      <Filter>Resource Files\Assets\Shaders</Filter>
+    </None>
+    <None Include="sbs.fs">
+      <Filter>Resource Files\Assets\Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\textures\bark.jpg">
+      <Filter>Resource Files\Assets\Textures</Filter>
+    </Image>
+    <Image Include="assets\textures\container.jpg">
+      <Filter>Resource Files\Assets\Textures</Filter>
+    </Image>
+    <Image Include="container.jpg">
+      <Filter>Resource Files\Assets\Textures</Filter>
+    </Image>
+    <Image Include="assets\textures\container2.jpg">
+      <Filter>Resource Files\Assets\Textures</Filter>
+    </Image>
+    <Image Include="assets\textures\steel.jpg">
+      <Filter>Resource Files\Assets\Textures</Filter>
+    </Image>
+    <Image Include="assets\textures\steel1.jpg">
+      <Filter>Resource Files\Assets\Textures</Filter>
+    </Image>
+    <Image Include="assets\textures\weed.jpg">
+      <Filter>Resource Files\Assets\Textures</Filter>
+    </Image>
+    <Image Include="assets\textures\weed2.jpg">
+      <Filter>Resource Files\Assets\Textures</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GKp.rc">
+      <Filter>Resource Files\Assets\Textures</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
